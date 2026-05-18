@@ -1,0 +1,18 @@
+title: "CochranBlock Docs"
+description: "Timeline of Invention · Proof of Artifacts · Project Documentation"
+url: "https://cochranblock.github.io"
+theme: minima
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
