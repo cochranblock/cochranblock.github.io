@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050508">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #050508; color: #e2e8f0; font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace; font-size: 15px; line-height: 1.7; }
+    a { color: #00d9ff; text-decoration: none; }
+    a:hover { color: #a855f7; text-decoration: underline; }
+    h1, h2, h3, h4 { color: #e2e8f0; margin: 1.5rem 0 0.5rem; }
+    h1 { font-size: 1.6rem; border-bottom: 1px solid #1e2a3a; padding-bottom: 0.4rem; }
+    h2 { font-size: 1.2rem; color: #00d9ff; }
+    h3 { font-size: 1rem; color: #14b8a6; }
+    p { margin: 0.75rem 0; }
+    code { background: #14141f; color: #c084fc; padding: 0.1em 0.35em; border-radius: 3px; font-size: 0.9em; }
+    pre { background: #14141f; border: 1px solid #1e2a3a; border-left: 3px solid #00d9ff; border-radius: 4px; padding: 1rem; overflow-x: auto; margin: 1rem 0; }
+    pre code { background: transparent; padding: 0; color: inherit; }
+    hr { border: none; border-top: 1px solid #1e2a3a; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    table th { background: #14141f; color: #00d9ff; border: 1px solid #1e2a3a; padding: 0.5rem 0.75rem; text-align: left; }
+    table td { border: 1px solid #1e2a3a; padding: 0.45rem 0.75rem; }
+    table tr:nth-child(even) td { background: #0d0d18; }
+    blockquote { border-left: 4px solid #14b8a6; background: #14141f; padding: 0.5rem 1rem; margin: 1rem 0; }
+    ul, ol { padding-left: 1.5rem; margin: 0.5rem 0; }
+    sub { color: #64748b; font-size: 0.75em; }
+    .site-header { background: #0a0a0f; border-bottom: 1px solid rgba(0,217,255,0.15); padding: 0.75rem 0; }
+    .site-header .wrapper { display: flex; align-items: center; justify-content: space-between; }
+    .site-title { color: #00d9ff !important; font-weight: 700; font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .site-title:hover { color: #a855f7 !important; text-decoration: none; }
+    .site-footer { background: #0a0a0f; border-top: 1px solid rgba(0,217,255,0.15); padding: 1rem 0; margin-top: 3rem; color: #64748b; font-size: 0.8rem; text-align: center; }
+    .wrapper { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+    .page-content { padding: 2rem 0; }
+    img { max-width: 100%; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" href="/">{{ site.title }}</a>
+    </div>
+  </header>
+  <main class="page-content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <sub>&#9656; THE COCHRAN BLOCK, LLC &middot; CAGE 1CQ66 &middot; UNLICENSE &middot; <a href="https://cochranblock.org">cochranblock.org</a></sub>
+    </div>
+  </footer>
+</body>
+</html>
