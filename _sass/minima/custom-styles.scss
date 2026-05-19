@@ -1,0 +1,88 @@
+// CochranBlock brand — kova palette override for minima dark skin
+
+body {
+  background: #050508 !important;
+  color: #e2e8f0 !important;
+}
+
+.site-header {
+  background: #0a0a0f !important;
+  border-bottom: 1px solid rgba(0, 217, 255, 0.15) !important;
+}
+
+.site-title, .site-title:visited {
+  color: #00d9ff !important;
+  font-weight: 700 !important;
+}
+
+.site-nav {
+  background: #0a0a0f !important;
+}
+
+.site-nav a, .site-nav a:visited {
+  color: #9ca3af !important;
+}
+
+.site-nav a:hover {
+  color: #00d9ff !important;
+}
+
+.site-footer {
+  background: #0a0a0f !important;
+  border-top: 1px solid rgba(0, 217, 255, 0.15) !important;
+  color: #64748b !important;
+}
+
+.page-content, .home {
+  background: #050508 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #e2e8f0 !important;
+}
+
+h3 { color: #00d9ff !important; }
+
+a {
+  color: #00d9ff !important;
+}
+
+a:hover {
+  color: #a855f7 !important;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  background: #14141f !important;
+  color: #00d9ff !important;
+  border: 1px solid #1e2a3a !important;
+  padding: 0.5rem 0.75rem;
+}
+
+table td {
+  border: 1px solid #1e2a3a !important;
+  padding: 0.45rem 0.75rem;
+  color: #e2e8f0;
+}
+
+table tr:nth-child(even) td {
+  background: #0d0d18 !important;
+}
+
+code, pre {
+  background: #14141f !important;
+  color: #c084fc !important;
+  border: 1px solid #1e2a3a;
+}
+
+pre code { color: inherit !important; }
+
+blockquote {
+  border-left: 4px solid #14b8a6 !important;
+  background: #14141f !important;
+  color: #e2e8f0 !important;
+}

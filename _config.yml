@@ -2,6 +2,8 @@ title: "CochranBlock Docs"
 description: "Timeline of Invention · Proof of Artifacts · Project Documentation"
 url: "https://cochranblock.github.io"
 theme: minima
+minima:
+  skin: dark
 plugins:
   - jekyll-relative-links
 relative_links:
